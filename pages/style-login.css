@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: black;
+}
+
+.container{
+    background: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+login img{
+    width: 150px;
+}
+
+input{
+    height: 50px;
+    border-radius: 5px;
+    border:  1px solid blue;
+    padding: 20px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.btn{
+    background: blue;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.login a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding:  5px 10px;
+    border-radius: 50px;
+}
+
+.login a:hover{
+    background: black;
+    color: white;
+    transform: scale(1);
+}

@@ -1,19 +1,33 @@
 @import url('https://fonts.googleapis.com/css2? family= Koulen & family= Poppins:wght@200 & family= Quicksand:wght@300 & family= Radio+Canada:wght@300 & family= Roboto+Flex:opsz,wght@8..144,200 & family= Roboto+Mono:wght@100 & family= Tapestry & display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Poppins:wght@200&family=Quicksand:wght@300&family=Radio+Canada:wght@300&family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto+Mono:wght@100&family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@100&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
+
+
 
 
 
 body {
     font-family: 'Poppins',
         sans-serif;
-    background: rgb(121, 9, 90);
-    background: linear-gradient(90deg, rgba(121, 9, 90, 1) 0%, rgba(0, 29, 36, 0.06206232492997199) 0%, rgba(0, 212, 255, 1) 100%);
+    background: #E55D87;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5FC3E4, #E55D87);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+
+
 }
 
 .logo {
@@ -67,17 +81,18 @@ body {
 
 .menu-principal {
     padding: 20px;
-    margin: 20px;
+
     display: flex;
     justify-content: left;
     align-items: center;
     gap: 5rem;
+    flex-wrap: wrap;
 }
 
 
 .image img {
-    width: 400px;
-    height: 50%;
+    width: 600px;
+    height: 60%;
 }
 
 .menu_texto {
@@ -88,14 +103,21 @@ body {
 
 .menu_texto h1 {
     font-family: 'Bebas Neue', cursive;
-    font-weight: 600;
-    font-size: 2rem;
+    font-weight: 800;
+    font-size: 3rem;
+    font-style: italic;
+    text-shadow: -12px 1px 13px rgba(0, 0, 0, 0.66);
+
+
 }
 
 .menu_texto p {
     max-width: 450px;
 
+
 }
+
+
 
 .text_btn {
     margin-top: 2rem;
@@ -105,15 +127,21 @@ body {
 
 
 .btn {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     padding: 1rem 1.3rem;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     font-weight: 600;
+    border-radius: 48px 65px 52px 52px;
+    -webkit-border-radius: 48px 65px 52px 52px;
+    -moz-border-radius: 48px 65px 52px 52px;
+    border: 7px groove #6150ff;
+
 }
 
 .btn:hover {
     transition: all 1s ease;
     background: cadetblue;
+
 }
 
 .btn_planes {
@@ -130,6 +158,7 @@ body {
     border-radius: 5px;
 }
 
+/* ! SECCION TEXTO  */
 .seccion_texto {
     padding: 60px;
     margin: 50px;
@@ -142,11 +171,200 @@ body {
 
 .seccion_texto_txt p {
 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
+    font-family: 'Kdam Thmor Pro',
+        sans-serif;
+    font-family: 'Poppins',
+        sans-serif;
+    font-size: larger;
     word-spacing: 0.5rem;
+    letter-spacing: 1px;
+    font-style: italic;
 
 
 }
 
+/* ! SECCION DESCRIPCION  */
+
+
+.seccion_descripcion {
+    padding: 2rem 0;
+
+}
+
+.seccion_descripcion h2 {
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.seccion_descripcion p {
+
+    text-align: center;
+    font-size: 1.25rem;
+    max-width: 1000px;
+    margin: 2rem auto 4rem auto;
+
+
+
+
+}
+
+/* ! CONTENEDOR BENEFICIOS */
+
+.container_beneficios_general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.container_beneficio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px -11px 37px -7px rgba(250, 0, 255, 0.5);
+    -webkit-box-shadow: -1px -11px 37px -7px rgba(250, 0, 255, 0.5);
+    -moz-box-shadow: -1px -11px 37px -7px rgba(250, 0, 255, 0.5);
+
+
+}
+
+.container_beneficio p {
+    text-align: center;
+
+
+
+}
+
+.container_beneficio h3 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+
+
+}
+
+.info_beneficios {
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+/* ! SECCION ENTRENAMIENTO */
+
+.seccion-entrenamiento {
+    padding: 1rem 0;
+
+
+}
+
+.texto-seccion-entrenamiento {
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 3rem auto 4rem auto;
+
+
+
+}
+
+.seccion-entrenamiento h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+/* - Contenedor Entrenamiento */
+
+.container-entrenamiento-general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+
+
+
+}
+
+.container-tipos-entrenamiento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto 2rem auto;
+    border: 8px outset #e750ff;
+
+}
+
+
+
+.container-tipos-entrenamiento p {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+
+
+}
+
+.container-tipos-entrenamiento h4 {
+    text-align: center;
+
+    font-size: 1rem;
+
+    text-decoration: underline;
+    margin: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.info_entrenamiento {
+    margin: 0.5rem;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
 /* ! FALTA HACER RESPONSIVE DESIGN */
+
+/* Mediaqueries Desktop */
+/* @media screen and (min-width: 1024px) {} */
+@media (max-width: 1024px) {
+
+    * {
+        border: 1px solid red;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    /* 
+    .nav-bar {
+        display: flex;
+        justify-content: flex-end;
+        gap: 50px;
+    } */
+
+    /* .nav-link {
+        display: flex;
+    } */
+
+    .btn-bars {
+        display: none;
+
+    }
+
+    .image img {
+        width: 400px;
+        height: 40%;
+    }
+
+
+
+}

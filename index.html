@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Landing Page</title>
 </head>
@@ -30,18 +31,27 @@
                     <a href="#" class="nav-link">CONTACTOS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">INICIAR SESION</a>
+                    <a href="./pages/login.html" class="nav-link" target="_blank">INICIAR SESION</a>
                 </li>
+
+                <!-- menu bars -->
+                <div class="btn-bars">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
             </ul>
         </nav>
 
     </header>
     <main>
+
+        <!-- ! Menu Principal  -->
         <section class="menu-principal">
 
             <div class="menu_texto">
+
                 <h1>Quality GyM</h1>
-                <p>Descubrí todo lo que Quality tiene para ofrecerte, buscá el gimnasio más cercano a tu casa y vení a
+                <p class="first-letter">Descubrí todo lo que Quality tiene para ofrecerte, buscá el gimnasio más cercano
+                    a tu casa y vení a
                     conocernos. ¡Te esperamos!</p>
                 <div class="text_btn">
                     <a href="#" class="btn btn_planes">Planes</a>
@@ -50,7 +60,7 @@
             </div>
             <!-- La otra caja -->
             <div class="image">
-                <img src="./img/hombre.png" alt="Entrenador" class="img">
+                <img src="./img/qualityfondo.jpg" alt="Entrenador" class="img">
             </div>
 
 
@@ -71,6 +81,90 @@
                     una experiencia inolvidable.</p>
             </div>
         </section>
+
+        <!-- - SECCION DESCRIPCION BENEFICIOS -->
+        <section class="seccion_descripcion">
+            <h2>Porque es tan Bueno el Ejercicio Fisico....</h2>
+
+            <p>El ejercicio es una medicina poderosa. El ejercicio es una parte importante de un estilo de vida
+                saludable. El ejercicio previene problemas de salud, fortalece, aumenta la energía y puede ayudarlo a
+                reducir el estrés. También puede ayudarlo a mantener un peso corporal saludable y controlar su apetito.
+            </p>
+            <!-- ESTE ES EL CONTENEDOR GENERAL -->
+            <div class="container_beneficios_general">
+
+
+
+                <!-- CONTENEDOR HIJO  -->
+                <div class="container_beneficio">
+                    <img src="./img/CorazonMano.png" alt="Corazon" class="info_beneficios">
+                    <h3>Salud Cardiovascular</h3>
+                    <!-- ! PODEMOS PONER DOS LI y SACARLE LOS ITEM CON CSS -->
+                    <p>Aumenta el Flujo sanguineo hacia el cerebro
+                    </p>
+                </div>
+
+                <!-- CONTENEDOR HIJO  -->
+                <div class="container_beneficio">
+                    <img src="./img/BicepsNegro.png" alt="Biceps" class="info_beneficios">
+                    <h3>Funcion Muscular</h3>
+                    <p>Aumento de masa muscular y calidad muscular</p>
+                </div>
+                <!-- CONTENEDOR HIJO  -->
+                <div class="container_beneficio">
+                    <img src="img/cerebro.png" alt="Cerebro" class="info_beneficios">
+                    <h3>Gimnasia Cerebral</h3>
+                    <p>Disminuye los niveles de estres y ansiedad</p>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- - SECCION ENTRENAMIENTO -->
+
+        <section class="seccion-entrenamiento">
+
+            <h2>MODALIDADES DE ENTRENAMIENTO QUALITY GYM</h2>
+            <p class="texto-seccion-entrenamiento">Un ecosistema de fitness que ofrece más libertad a la hora de
+                entrenar.</p>
+            <!-- -Este es el Contenedor General(PADRE) -->
+            <div class="container-entrenamiento-general">
+
+
+
+                <!-- Contenedor (HIJO) -->
+                <div class="container-tipos-entrenamiento">
+                    <img src="./img/mancuerna1.png" alt="Manquerna" class="info_entrenamiento">
+                    <h4>HIT</h4>
+                    <p>Ejercicios explosivos intercalando peridos de recuperacion.</p>
+
+                </div>
+                <!-- Contenedor (HIJO) -->
+                <div class="container-tipos-entrenamiento">
+                    <img src="./img/cardio.png" alt="Cardio" class="info_entrenamiento">
+                    <h4>SPINNING</h4>
+                    <p>Es una practica por exelencia con mayor porcentaje de quema calorica.</p>
+
+                </div>
+                <!-- Contenedor (HIJO) -->
+                <div class="container-tipos-entrenamiento">
+                    <img src="img/cuera.png" alt="Cuerda" class="info_entrenamiento">
+                    <h4>CROSSFIT</h4>
+                    <p>Realizar el mayor numero de ejercicio a la maxima potencia.</p>
+
+                </div>
+                <!-- Contenedor (HIJO) -->
+                <div class="container-tipos-entrenamiento">
+                    <img src="img/maquina.png" alt="Maquina" class="info_entrenamiento">
+                    <h4>GIMNASIO</h4>
+                    <p>Es con ayuda de maquinas especificas para cada parte del cuerpo.</p>
+
+                </div>
+            </div>
+
+        </section>
+
+
     </main>
 </body>
 
