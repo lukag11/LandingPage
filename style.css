@@ -27,7 +27,6 @@ body {
 
 
 
-
 }
 
 .logo {
@@ -116,12 +115,13 @@ body {
 /* ! PADRE DE MENU TEXTO */
 
 .menu-principal {
-    padding: 20px;
+    /* padding: 20px; */
 
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     gap: 5rem;
+    padding: 5rem 0rem;
     flex-wrap: wrap;
 }
 
@@ -230,6 +230,7 @@ body {
 .seccion_descripcion h2 {
     font-size: 1.5rem;
     text-align: center;
+    text-decoration: underline;
 
 }
 
@@ -253,6 +254,7 @@ body {
     align-items: center;
     gap: 4rem;
 
+
 }
 
 .container_beneficio {
@@ -263,6 +265,9 @@ body {
     box-shadow: -1px -11px 37px -7px rgba(250, 0, 255, 0.5);
     -webkit-box-shadow: -1px -11px 37px -7px rgba(250, 0, 255, 0.5);
     -moz-box-shadow: -1px -11px 37px -7px rgba(250, 0, 255, 0.5);
+    padding: 1rem;
+    margin: 1rem;
+
 
 
 }
@@ -309,6 +314,7 @@ body {
     font-size: 1.5rem;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: underline;
 
 }
 
@@ -318,7 +324,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
 
 
 
@@ -331,6 +339,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 2rem auto 2rem auto;
+
     border: 8px outset #e750ff;
 
 }
@@ -362,7 +371,175 @@ body {
     margin-bottom: 2rem;
 }
 
+/* ! SECCION DIETAS */
 
+/* .seccion-dietas {} */
+
+.seccion-dietas h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.texto-seccion-dietas {
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 2rem auto 2rem auto;
+}
+
+
+
+.container-dietas-general {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 4rem 4rem 4rem;
+    margin: 4rem 4rem 4rem 4rem;
+
+
+
+}
+
+.container-dietas-tipos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    margin: 5px;
+
+}
+
+/* CARACTERISTICAS DEL BOTON VER DIETAS */
+.container-dietas-tipos a {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    color: #666666;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+
+}
+
+/* LE DAMOS MOVIMIENTO AL BOTON VER DIETAS */
+.container-dietas-tipos:hover a {
+    display: flex;
+    transition: 0.8s;
+
+}
+
+
+
+.info_dietas {
+
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+/* ! footer */
+
+.title-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 10px 10px 10px 10px;
+}
+
+.logo-q {
+    height: 70%;
+    border-radius: 40px;
+}
+
+.linea {
+    height: 5px;
+    background-color: black;
+
+}
+
+.info-contacto-general {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.contactos h2 {
+    text-decoration: underline;
+    text-align: left;
+    padding: 7px 7px;
+    margin: 7px 7px;
+
+
+}
+
+.Siguenos h2 {
+
+    padding: 6px;
+    margin: 6px;
+    text-decoration: underline;
+
+
+}
+
+.mapa h2 {
+
+    padding: 6px;
+    margin: 6px;
+    text-decoration: underline;
+
+
+}
+
+.contactos {
+
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+    text-align: left;
+
+
+}
+
+.Siguenos {
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+
+    text-align: left;
+
+}
+
+.mapa {
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+
+}
+
+.list {
+    list-style: none;
+
+}
+
+.list a {
+    text-decoration: none;
+
+}
 
 
 
@@ -372,12 +549,30 @@ body {
 /* @media screen and (min-width: 1024px) {} */
 @media (max-width: 1024px) {
 
-
+    * {
+        /* border: 1px solid red; */
+    }
 
     .nav-bar {
         display: none;
     }
 
+    /*  - MENU PRINCIPAL CON BOTONES */
+
+    .menu_texto p {
+        text-align: left;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .text_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* - SECCION IMAGEN */
 
     .image img {
         width: 300px;
@@ -406,5 +601,141 @@ body {
 
     }
 
+    /* - SECCION TEXTO */
+    .seccion_texto {
 
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    /* - SECCION DESCRIPCION(BENEFICIOS) */
+
+
+
+    .seccion_descripcion {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+        margin: 1rem 1rem;
+
+
+    }
+
+    .seccion_descripcion h2 {
+        text-align: center;
+        font-size: larger;
+        padding: 1px 1px;
+        margin: 1px 1px;
+
+    }
+
+
+    .container_beneficios_general {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+        margin: 1rem 1rem;
+
+
+    }
+
+    /* - SECCION ENTRENAMIENTOS(TIPOS) */
+
+
+    .seccion-entrenamiento {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+        margin: 1rem 1rem;
+    }
+
+    .seccion-entrenamiento texto-seccion-entrenamiento {
+        text-align: center;
+        font-size: larger;
+        padding: 1rem 1rem;
+        margin: 1rem 1rem;
+    }
+
+    .seccion-entrenamiento h2 {
+        text-align: center;
+        font-size: larger;
+        padding: 1px 1px;
+        margin: 1px 1px;
+    }
+
+    .container-entrenamiento-general {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+        margin: 1rem 1rem;
+
+    }
+
+    /* - SECCION DIETAS(TIPOS) */
+
+    .seccion-dietas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+        margin: 1rem 1rem;
+    }
+
+    .container-dietas-general {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+        margin: 1rem 1rem;
+    }
+
+    /* - //FOOTER */
+
+    /* .back-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+        margin: 1rem 1rem;
+    } */
+
+    .title-logo {}
+
+    .info-contacto-general {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid green;
+    }
+
+
+
+    .contactos {
+
+        text-align: center;
+        border: 1px solid red;
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .contactos a {
+        font-size: small;
+    }
+
+    .Siguenos a {
+        font-size: small;
+    }
+
+    .Siguenos {
+        text-align: center;
+        border: 1px solid red;
+
+    }
+
+    .mapa {}
 }

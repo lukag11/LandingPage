@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Landing Page</title>
 </head>
@@ -16,7 +17,7 @@
 
 
 
-        <img src="./img/icono.jpg" alt="" class="logo">
+        <img src="./img/icono.jpg" alt="" class="logo animate__animated animate__bounce">
 
         <!-- ! NAV BAR -->
         <nav class="nav-bar">
@@ -164,8 +165,103 @@
 
         </section>
 
+        <section class="seccion-dietas">
+
+            <h2>Dietas</h2>
+
+            <p class="texto-seccion-dietas">Distintas dietas para mejorar tu entrenamiento</p>
+
+            <!-- ! Este es el contenedor padre -->
+
+            <div class="container-dietas-general">
+
+                <!-- Contenedor Hijos -->
+
+                <div class="container-dietas-tipos">
+                    <img src="./img/carne.jpg" alt="carne" class="info_dietas">
+                    <a href="https://www.vitonica.com/categoria/dietas" target="_blank">Ver Dieta</a>
+                </div>
+                <!-- Contenedor Hijos -->
+
+                <div class="container-dietas-tipos">
+                    <img src="./img/tomate.jpg" alt="pescado" class="info_dietas">
+                    <a href="https://www.vitonica.com/categoria/dietas" target="_blank">Ver Dieta</a>
+                </div>
+                <!-- Contenedor Hijos -->
+
+                <div class="container-dietas-tipos">
+                    <img src="./img/ensalada.jpg" alt="ensalada" class="info_dietas">
+                    <a href="https://www.vitonica.com/categoria/dietas" target="_blank">Ver Dieta</a>
+                </div>
+                <!-- Contenedor Hijos -->
+
+                <div class="container-dietas-tipos">
+                    <img src="./img/pescado.jpg" alt="huevos" class="info_dietas">
+                    <a href="https://www.vitonica.com/categoria/dietas" target="_blank">Ver Dieta</a>
+                </div>
+                <!-- Contenedor Hijos -->
+
+                <div class="container-dietas-tipos">
+                    <img src="./img/huevo.jpg" alt="tomate" class="info_dietas">
+                    <a href="https://www.vitonica.com/categoria/dietas" target="_blank">Ver Dieta</a>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
 
     </main>
+
+    <footer class="back-footer">
+
+        <div class="title-logo animate__zoomIn">
+            <img src="./img/icono.jpg" alt="logo" class="logo-q" />
+        </div>
+
+        <hr class="linea">
+        <div class="info-contacto-general">
+            <div class="contactos">
+                <h2>Contacto</h2>
+
+                <ul>
+                    <li class="list">
+                        <a href="#" i class="fa-brands fa-whatsapp"></i> 3571-601731</a>
+                    </li>
+                    <li class="list">
+                        <a href="#" i class="fa-brands fa-at"></i> Lukg2211@gmail.com</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="Siguenos">
+                <h2>Siguenos</h2>
+                <ul>
+                    <li class="list">
+                        <a href="#" i class="fa-brands fa-facebook"></i> Facebook</a>
+                    </li>
+                    <li class="list">
+                        <a href="#" i class="fa-brands fa-instagram"></i> Instagram</a>
+                    </li>
+                    <li class="list">
+                        <a href="#" i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                </ul>
+            </div>
+
+            <div class="mapa">
+                <h2>Ubicacion</h2>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13497.740035924962!2d-63.970559849999994!3d-32.2463761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1655198312485!5m2!1ses!2sar"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>
