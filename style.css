@@ -553,8 +553,45 @@ body {
         /* border: 1px solid red; */
     }
 
-    .nav-bar {
+    .nav-list {
         display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-button {
+        display: none;
+
+    }
+
+    .navbar-hamburguesa {
+        display: block;
+    }
+
+    .fa-solid.fa-bars {
+        color: #FC33FF;
+        font-size: 2rem;
+        margin-right: 15px;
+    }
+
+    .menu-responsive {
+        display: none;
+        position: absolute;
+
+
+    }
+
+    .menu-button:checked~.menu-responsive {
+        background-color: #FC33FF;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 15px;
+        right: 0;
+        margin-top: 23.5px;
+        padding: 10px;
     }
 
     /*  - MENU PRINCIPAL CON BOTONES */
@@ -600,6 +637,8 @@ body {
         height: 20px;
 
     }
+
+
 
     /* - SECCION TEXTO */
     .seccion_texto {
@@ -709,7 +748,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 1px solid green;
+
     }
 
 
@@ -717,7 +756,7 @@ body {
     .contactos {
 
         text-align: center;
-        border: 1px solid red;
+
         width: 200px;
         height: 200px;
 
@@ -733,7 +772,7 @@ body {
 
     .Siguenos {
         text-align: center;
-        border: 1px solid red;
+
 
     }
 
