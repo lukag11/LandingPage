@@ -29,6 +29,8 @@ body {
 
 }
 
+
+
 .logo {
     height: 70%;
     border-radius: 40px;
@@ -48,6 +50,7 @@ body {
     /* //NAV BAR DESLIZABLE */
     position: sticky;
     top: 0;
+    z-index: 1;
 
 }
 
@@ -60,9 +63,14 @@ body {
     gap: 30px;
     list-style: none;
     text-decoration: none;
+    margin-right: 15px;
 
 
 }
+
+
+
+
 
 
 
@@ -70,6 +78,7 @@ body {
 
     position: relative;
     padding: 0;
+
 }
 
 
@@ -107,9 +116,15 @@ body {
     text-decoration: none;
 }
 
-.btn-bars {
+/* - MENU HAMBURGUESA BLOQUEAR */
+
+
+
+
+.navbar-hambrugesa {
     display: none;
 }
+
 
 
 /* ! PADRE DE MENU TEXTO */
@@ -543,7 +558,7 @@ body {
 
 
 
-/* ! FALTA HACER RESPONSIVE DESIGN */
+
 
 /* Mediaqueries Desktop */
 /* @media screen and (min-width: 1024px) {} */
@@ -566,7 +581,7 @@ body {
 
     }
 
-    .navbar-hamburguesa {
+    .navbar-hambrugesa {
         display: block;
     }
 
@@ -621,22 +636,8 @@ body {
 
     }
 
-    .btn {
 
-        border: 2px solid blue;
-        padding: 0.5rem 0.8rem;
-    }
 
-    .btn-bars {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: blue;
-        width: 20px;
-        height: 20px;
-
-    }
 
 
 
